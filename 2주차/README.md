@@ -81,9 +81,7 @@
 <br>
 
 ## 📌 Collection Framework 클래스 구조
-
-![출처 : [https://velog.io/@ann0905/알고리즘을-위한-자바-함수-정리](https://velog.io/@ann0905/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9E%90%EB%B0%94-%ED%95%A8%EC%88%98-%EC%A0%95%EB%A6%AC)](2%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20(6%2028)%200e6d62018d72485494af98fcbb231278/%25EC%259E%2590%25EB%25B0%2594_%25EC%25BB%25AC%25EB%25A0%2589%25EC%2585%2598.png)
-
+![자바 컬렉션 PNG](https://github.com/DevCHW/algorithm-course/assets/112748454/623e68de-8a2b-44e5-a734-e6395eebbaf7)
 출처 : [https://velog.io/@ann0905/알고리즘을-위한-자바-함수-정리](https://velog.io/@ann0905/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9E%90%EB%B0%94-%ED%95%A8%EC%88%98-%EC%A0%95%EB%A6%AC)
 
 <br>
