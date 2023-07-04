@@ -1,13 +1,12 @@
-## Info
-<a href="https://www.acmicpc.net/problem/2075" rel="nofollow">N번째 큰 수</a>
-
-## 풀이 코드
-___
-
-``` java
 import java.util.*;
 
 public class Main {
+    /**
+     * BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     * StringTokenizer st = new StringTokenizer(br.readLine());
+     * int n = Integer.parseInt(br.readLine());
+     */
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -37,17 +36,3 @@ public class Main {
         return answer;
     }
 }
-```
-<br>
-
-## ❗ 풀이 방법
-___
-모든 수를 PriorityQueue에 넣고, n번만큼 priorityQueue에서 `poll()` 한 값을 찾아 출력하였다. 
-
-<br>
-
-
-## 🙂 새로 알게된 점
-___
-* 새로 알게된 점은 없고, 여러가지 풀이 방법이 있겠지만 PrioriryQueue를 사용하여 최대한 간단하게 구현하여 풀었다.
-
