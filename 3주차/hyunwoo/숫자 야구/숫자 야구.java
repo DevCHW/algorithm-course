@@ -1,8 +1,3 @@
-## Info
-<a href="https://www.acmicpc.net/problem/2503" rel="nofollow">숫자 야구</a>
-
-## 풀이 코드
-```java
 import java.util.*;
 
 public class Main {
@@ -84,13 +79,18 @@ public class Main {
         return answer;
     }
 
+
+    /**
+     * print() 구현
+     */
+    private static void print(String str) {
+        System.out.println(str);
+    }
+
+    /**
+     * print() 구현
+     */
+    private static void print(int number) {
+        System.out.println(number);
+    }
 }
-
-```
-
-## ❗ 풀이 방법
-3중 for문을 이용하여 3자리의 모든 숫자 조합을 추려낸 뒤, 입력으로 받은 `questions`를 탐색하여 조건에 부합하는지 검사하여 조건에 부합한다면 answer를 카운팅해주는 방식으로 풀었다.
-
-## 🙂 새로 알게된 점
-* 숫자 세자리 조합을 삼중 for문으로 구현할 수 있다면 N의 범위가 작기 때문에 어렵지 않게 완전탐색으로 풀 수 있는 문제이다.
-
