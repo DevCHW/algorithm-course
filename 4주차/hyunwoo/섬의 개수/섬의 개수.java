@@ -1,9 +1,3 @@
-## Info
-<a href="https://www.acmicpc.net/problem/4963" rel="nofollow">섬의 개수</a>
-
-
-## 풀이 코드
-```java
 import java.util.*;
 public class Main {
     static class Position {
@@ -89,29 +83,3 @@ public class Main {
         }
     }
 }
-```
-## ❗ 풀이 방법
-1. w와 h가 0, 0이 입력될 때 까지 solution 메소드를 호출한다.  
-2. 2차원 배열인 지도를 탐색하면서, 방문하지 않은 땅을 만나면 섬의 갯수를 `answer`를 카운팅하고 `bfs` 메소드를 호출한다.  
-3. `bfs` 메소드는 매개변수로 넘겨받은 땅의 위치에서 걸어갈 수 있는 땅을 전부 방문처리한다.
-
-## 🙂 새로 알게된 점
-* 처음에 대각선 방향벡터 정의를 잘못하여 알맞게 풀이했는데 섬의 갯수가 똑바로 안나왔었다.. 방향벡터를 정의할 때 좀 더 신중해야겠다.  
-참고로, DFS로 풀이한다면 다음의 코드를 넣고 bfs 메소드 대신 dfs 메소드를 호출하면 된다.
-
-```java
-private static void dfs(int[][] graph, int x, int y, int weight, int height) {
-    for(int i=0; i<8; i++) {
-        int nx = x+dx[i];
-        int ny = y+dy[i];
-
-        if(nx >= 0 && nx < height && ny >= 0 && ny < weight
-                && graph[nx][ny] == 1
-                && !visited[nx][ny] ) {
-            visited[nx][ny] = true; //방문처리
-            dfs(graph, nx, ny, weight, height);
-        }
-    }
-}
-```
-
