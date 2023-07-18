@@ -1,8 +1,3 @@
-## Info
-<a href="문제 주소" rel="nofollow">문제 이름</a>
-
-## 풀이 코드
-```java
 import java.util.*;
 
 public class Main {
@@ -12,9 +7,6 @@ public class Main {
     static int[][] graph;
     static boolean[] visited;
 
-    /**
-     * 입,출력
-     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();   //정점의 개수
@@ -32,12 +24,9 @@ public class Main {
             graph[vtx2][vtx1] = 1;
         }
 
-        System.out.print(solution(start));
+        print(solution(start));
     }
 
-    /**
-     * dfs, bfs 풀이
-     */
     private static StringBuilder solution(int start) {
         StringBuilder sb = new StringBuilder();
         visited = new boolean[n+1];
@@ -45,13 +34,13 @@ public class Main {
         // DFS
         sb.append(start).append(" ");
         visited[start] = true;
-        dfs(start, sb); //dfs 호출
+        dfs(start, sb);
 
         // BFS
         sb.append("\n");
         Arrays.fill(visited, false);
         sb.append(start).append(" ");
-        bfs(start, sb); //bfs 호출
+        bfs(start, sb);
 
         return sb;
     }
@@ -61,7 +50,7 @@ public class Main {
             if (graph[vertex][i] == 1) { //연결되어 있다면
                 if (!visited[i]) { //방문하지 않았다면
                     visited[i] = true;  //방문처리
-                    sb.append(i).append(" ");   //출력을 위한 append
+                    sb.append(i).append(" ");
                     dfs(i, sb);
                 }
             }
@@ -81,21 +70,30 @@ public class Main {
                 if(graph[vertex][i] == 1) {
                     if(!visited[i]) {
                         visited[i] = true;
-                        queue.offer(i); 
-                        sb.append(i).append(" "); //출력을 위한 append
+                        queue.offer(i);
+                        sb.append(i).append(" ");
                     }
                 }
             }
         }
     }
+
+
+    /**
+     * print() 구현
+     */
+    private static void print(String str) {
+        System.out.println(str);
+    }
+
+    /**
+     * print() 구현
+     */
+    private static void print(int number) {
+        System.out.println(number);
+    }
+
+    private static void print(StringBuilder sb) {
+        System.out.print(sb);
+    }
 }
-```
-
-## ❗ 풀이 방법
-`StringBuilder`에 DFS로 탐색한 결과와 BFS로 탐색한 결과를 appned로 쌓아서 한번에 main함수에서 출력하였다.  
-DFS는 재귀를 이용(메소드 스택프레임), BFS는 Queue 자료구조를 이용하여 풀이하였다.
-
-## 🙂 새로 알게된 점
-
-* 가장 기본적인 DFS, BFS 풀이이다.
-
