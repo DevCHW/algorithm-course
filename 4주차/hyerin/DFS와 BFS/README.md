@@ -1,8 +1,8 @@
 ## Info
-<a href="문제 주소" rel="nofollow">문제 이름</a>
+<a href="https://www.acmicpc.net/problem/1260" rel="nofollow">DFS와 BFS</a>
 
 ## ❗ 풀이 방법
-1. 
+1. BFS와 DFS를 모두 사용해볼 수 있는 기본적인 문제였다!
 2. 
 3. 
 
