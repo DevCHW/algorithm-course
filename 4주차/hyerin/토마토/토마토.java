@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class 토마토_7576 {
+public class 토마토_7576  {
 
     static class Point{
         int x;
