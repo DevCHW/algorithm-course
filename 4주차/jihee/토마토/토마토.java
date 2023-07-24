@@ -22,17 +22,17 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        n = sc.nextInt();
         m = sc.nextInt();
+        n = sc.nextInt();
 
         arr = new int[n][m];
 
         for(int i=0; i<n; i++ ){
             for(int j=0; j<m; j++){
-               arr[i][j] = sc.nextInt();
-               if(arr[i][j] == 1){
-                   queue.add(new Node(i,j)); // 익은 토마토가 어디있는지 알아야 하기 때문에 익은 토마토 큐에 넣어주기
-               }
+                arr[i][j] = sc.nextInt();
+                if(arr[i][j] == 1){
+                    queue.add(new Node(i,j)); // 익은 토마토가 어디있는지 알아야 하기 때문에 익은 토마토 큐에 넣어주기
+                }
             }
         }
         System.out.print(solution());
@@ -50,12 +50,13 @@ public class Main {
         //탐색 마치고 토마토판에서 가장 큰 일 자 구하기
         for(int i = 0; i< n; i++){
             for(int j=0; j<m; j++){
-             if(arr[i][j] == 0) { //탐색 마쳤는데 안익은 토마토가 있다면
-                 return -1;
-             }
-             answer = Math.max(answer, visited[i][j]);
+                if(arr[i][j] == 0) { //탐색 마쳤는데 안익은 토마토가 있다면
+                    return -1;
+                }
+                answer = Math.max(answer, visited[i][j]);
             }
         }
+
         return answer;
     }
 
