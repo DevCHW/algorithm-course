@@ -1,8 +1,3 @@
-## Info
-<a href="https://www.acmicpc.net/problem/15649" rel="nofollow">N과 M</a>
-
-## 풀이 코드
-```java
 import java.util.*;
 
 public class Main {
@@ -43,12 +38,3 @@ public class Main {
         }
     }
 }
-
-```
-
-## ❗ 풀이 방법
-visited로 1부터 N까지의 사용을 체크하면서 재귀호출하여 arr에 순열을 만든다.
-
-## 🙂 새로 알게된 점
-* 전형적인 순열 문제이다. N+1크기의 visited 배열을 만들어서 체크를 해주고 풀어가면서 수를 만드는 것을 떠올릴 수 있다면 쉽게 재귀적으로 풀어낼 수 있다.
-
